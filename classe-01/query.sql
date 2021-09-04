@@ -50,13 +50,19 @@ from musicas
 where compositor is not null;
 
 select *
-from musicas where compositor like 'Bra%';
+from musicas
+where compositor like 'Bra%';
 
 select *
-from musicas where ritmo like '%troppo';
+from musicas
+where ritmo like '%troppo';
 
 select *
-from musicas where composicao like '%quartet%';
+from musicas
+where composicao
+ilike '%quartet%';
 
 select *
-from musicas where composicao like '%quintet%';
+from musicas
+where composicao
+ilike '%quintet%';
